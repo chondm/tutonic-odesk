@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  layout "login"
   def home
   end
 
@@ -12,5 +13,8 @@ class PagesController < ApplicationController
   end
 
   def contact
+  end
+  
+  def sign_in
   end
 end

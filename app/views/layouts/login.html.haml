@@ -1,0 +1,43 @@
+!!!
+%html
+  %head
+    %title Tutonic oDesk Test App
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  %body
+    .container
+      = render "shared/header_login"
+      .clear
+      %section#gridSystem
+        .row.show-grid
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+          .span1 
+        .row.show-grid
+          .span4 
+          .span4 
+          .span4 
+        .row.show-grid
+          .span4 
+          .span8 
+        .row.show-grid
+          .span6 
+          .span6 
+        .row.show-grid
+          .span5.offset4.center
+            = yield
+    .center
+      = render 'shared/footer_login'
+

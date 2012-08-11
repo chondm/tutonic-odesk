@@ -11,8 +11,9 @@ group :development, :test do
   gem 'rspec-rails', '2.9.0'
 end
 
-gem 'jquery-rails', '2.0.0'
-
+gem 'jquery-rails', '2.0.2'
+gem 'haml'
+gem 'simple_form'
 # Gems used only for assets and not required
 # in production environments by default.
 

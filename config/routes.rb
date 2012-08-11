@@ -1,10 +1,11 @@
 TutonicOdeskTest::Application.routes.draw do
+
   root to: 'pages#home'
 
   resources :users
-
+    
   match '/signup',  to: 'users#new'
-
+  match '/signin',  to: 'pages#sign_in'
   match '/home',    to: 'pages#home'
   match '/help',    to: 'pages#help'
   match '/about',   to: 'pages#about'
