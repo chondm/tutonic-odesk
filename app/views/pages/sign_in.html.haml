@@ -1,8 +1,7 @@
 .font-header
   Login to Tutonic 
-A site dedicated to finding you the best tutors.
-.btn-group.margin-learn
-  %button.btn.btn-info Learn More
+.font-des A site dedicated to finding you the best tutors.
+= link_to "Learn More", "#", :class => "btn-login"
   
 = image_tag("fb-connect.png")
 %table.table-span
@@ -12,16 +11,19 @@ A site dedicated to finding you the best tutors.
     %td.or-text OR
     %td
       %div.line
-= simple_form_for("", :html => {:class => "well form-vertical span4"}) do
-  = text_field_tag "email", nil, :class => "span4", :placeholder => "Email address"
-  = password_field_tag "password", nil, :class => "span4", :placeholder => "Password"
-  .login-button.pull-left
-    = link_to "Login Now!", "#", :class => "login-text"
-  .remember.pull-right
-    = label_tag "remember_me",:class => "checkbox" do
-      = check_box_tag ""
-      Remember me next time
-  %div.clear
-  .link-lg.left
-    = link_to "Forgot Password?", "#"
-    = link_to "Need an account?", "#"
+.clear
+.login-div
+  .box
+    = simple_form_for("", :html => {:class => "form-padding"}) do
+      = text_field_tag "email", nil, :class => "input-text", :placeholder => "Email address"
+      = password_field_tag "password", nil, :class => "input-text", :placeholder => "Password"
+      .login-button.pull-left
+        = link_to "Login Now!", "#", :class => "login-text"
+      .remember.pull-right
+        = label_tag "remember_me",:class => "checkbox" do
+          = check_box_tag ""
+          Remember me next time
+      %div.clear
+      .link-lg.left
+        = link_to "Forgot Password?", "#"
+        = link_to "Need an account?", "#"

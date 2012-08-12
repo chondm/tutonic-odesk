@@ -1,10 +1,15 @@
 !!!
-%html
+%html{:lang => "en"}
   %head
-    %title Tutonic oDesk Test App
+    %meta{:charset => "utf-8"}
+    %title Tutonic | Sign in
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+      %meta{:content => "authenticity_token", :name => "csrf-param"}/
+      %meta{:content => "URewYqevZ4k+RlNPK+/P0A9mGsE2YD4aTdbGhL1WMV4=", :name => "csrf-token"}/
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   %body
@@ -36,7 +41,7 @@
           .span6 
           .span6 
         .row.show-grid
-          .span5.offset4.center
+          .span5.offset4.center.align-content
             = yield
     .center
       = render 'shared/footer_login'

@@ -1,6 +1,6 @@
 .row.menu-margin
   %header
-    %a#tutonic.pull-left{:href => "/home"} Tu·ton·ic
+    = image_tag("logo.png", :class=>"logo")
     %nav.pull-right
       %ul
         %li
@@ -11,5 +11,5 @@
           %a{:href => "/signin"} Login
         %li
           %a{:href => "/home", :class=>"active"}
-            = image_tag("pencil.png", :width=>"15px")
+            = image_tag("active-pencil.png", :width=>"15px")
             Sign Up
