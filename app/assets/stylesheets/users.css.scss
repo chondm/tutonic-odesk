@@ -19,11 +19,7 @@ body {
 
 .table-span {
   width: 262px;
-  margin: 0 0 10px 62px;
-}
-.login-button {
-  width: 132px;
-  margin: 13px 10px 10px auto;
+  margin: 0 0 10px 339px;
 }
 
 .remember {
@@ -55,24 +51,28 @@ body {
 }
 a.login-text {
   font-family: "Rockwell";
-  padding: 8px 12px;
+  padding: 0 12px;
+  height: 35px;
+  line-height: 35px;
   text-decoration: none;
-  background: url("btn-bg.png");
+  background: url("btn-bg.png") repeat-x;
   border: none;
   color: white !important;
   font-size: 18px;
   display: inline-block;
   background-color: transparent;
+  float: right;
+  margin-top: 4px;
 }
 .footer-text {
   font-family: "Rockwell";
   font-size: 8pt;
-  padding-left: 57px;
+  text-align: center;
 }
 a.option-text {
   margin-bottom: 15px;
   font-size: 12px;
-  color: #5EA2B7;
+  color: #5EA2B7 !important;
   font-family: "Calibri";
 }
 .line {
@@ -87,15 +87,14 @@ a.option-text {
   font-family: "Calibri";
 }
 .btn-link {
-  padding-right: 25px;
   padding-left: 20px;
   font-size: 15px;
-  padding-top: 8px;
   color: #4B5053;
   font-family: "Rockwell";
 }
 .in-box {
-  padding: 15px 0px;
+  height: 47px;
+  line-height: 47px;
 }
 
 nav {
@@ -148,27 +147,27 @@ a {
 
 .home-div {
   width: 415px;
-  margin: 25px 0 48px 10px;
+  margin: 25px 0 48px 0px;  
 }
 .login-div {
   width: 347px;
-  margin: 0 0 48px 20px;
+  margin: 0 0 48px 0px;
 }
 .box {
   overflow: visible;
   margin: 10px;
   position: relative;
-  background-color: #72B6CB !important;
+  background-color: #5EA2B7 !important;
 }
 .box::before, .box::after {
   opacity: 0.3 !important;
 }
 
 .box::before {
-  top: -10px;
-  left: -10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  top: -6px;
+  left: -6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
 }
 .form-padding{
   padding: 10px;
@@ -191,10 +190,10 @@ a {
 }
 
 .box::after {
-  right: -10px;
-  bottom: -10px;
-  padding-top: 10px;
-  padding-left: 10px;
+  right: -6px;
+  bottom: -6px;
+  padding-top: 6px;
+  padding-left: 6px;
 }
 
 .box::before, .box::after {
@@ -241,9 +240,6 @@ a {
   margin-bottom: 15px;
 }
 
-.align-content {
-  padding-top: 20px;
-}
 .underline {
   text-decoration: underline;
   padding-right: 10px;

@@ -40,9 +40,8 @@
         .row.show-grid
           .span6 
           .span6 
-        .row.show-grid
-          .span5.offset4.center.align-content
-            = yield
-    .center
-      = render 'shared/footer_login'
+        .center.show-grid
+          = yield
+      .center
+        = render 'shared/footer_login'
 
