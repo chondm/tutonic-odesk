@@ -1,17 +1,22 @@
+$color: #5EA2B7;
+$color-font: #A2BBC5;
+$font-type: "Rockwell";
+$common-color: #4B5053;
+
 body {
   background-image: url("background.jpg");
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding-top: 0px;
-  color: #4B5053;
-  
+  color: $common-color;
 }
 
 .margin-fb {
   margin-left: 20px;
   margin-bottom: 10px;
 }
+
 .process-span {
   width: 80px;
   margin-left: 0px;
@@ -30,53 +35,37 @@ body {
 .clear {
   clear:both;
 }
+
 .font-header {
   line-height: 18px;
-  color: #A2BBC5;
+  color: $color-font;
   margin: 10px 0 20px 0;
   font-size: 30px;
   text-align: center;
-  font-family: "Rockwell" !important;
+  font-family: $font-type !important;
 }
+
 .or-text {
-  font-family: "Rockwell";
+  font-family: $font-type;
   font-size: 14pt;
   width: 10px; 
   padding: 0 10px;
 }
+
 .font-des {
   font-size: 13px;
   margin-bottom: 10px;
   font-family: "Calibri";
 }
-a.login-text {
-  font-family: "Rockwell";
-  padding: 0 12px;
-  height: 35px;
-  line-height: 35px;
-  text-decoration: none;
-  background: url("btn-bg.png") repeat-x;
-  border: none;
-  color: white !important;
-  font-size: 18px;
-  display: inline-block;
-  background-color: transparent;
-  float: right;
-  margin-top: 4px;
-}
+
 .footer-text {
-  font-family: "Rockwell";
+  font-family: $font-type;
   font-size: 8pt;
   text-align: center;
 }
-a.option-text {
-  margin-bottom: 15px;
-  font-size: 12px;
-  color: #5EA2B7 !important;
-  font-family: "Calibri";
-}
+
 .line {
-  border-top: 1px solid #4B5053;
+  border-top: 1px solid $common-color;
 }
 
 
@@ -86,12 +75,14 @@ a.option-text {
   margin-bottom: 10px;
   font-family: "Calibri";
 }
+
 .btn-link {
   padding-left: 20px;
   font-size: 15px;
-  color: #4B5053;
-  font-family: "Rockwell";
+  color: $common-color;
+  font-family: $font-type;
 }
+
 .in-box {
   height: 47px;
   line-height: 47px;
@@ -110,13 +101,13 @@ nav {
       a.normal {
         padding: 4px 16px;
         font-size: 15px;
-        color: #4B5053;
-        font-family: "Rockwell";
+        color: $common-color;
+        font-family: $font-type;
         text-decoration: none;
       }
       a.active {
-        color: #A2BBC5;
-        font-family: "Rockwell";
+        color: $color-font;
+        font-family: $font-type;
         text-decoration: none;
         background: url("active-pencil.png") no-repeat top left;
         padding-left: 27px;
@@ -137,16 +128,39 @@ nav {
 }
 
 a {
-  color: #4B5053;
+  color: $common-color;
   &:visited {
-    color: #4B5053; }
+    color: $common-color; 
+  }
   &:hover {
-    color: #4B5053;
-    background-color: transparent; } 
+    color: $common-color;
+    background-color: transparent;
+  }
+  .option-text {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: $color !important;
+    font-family: "Calibri";
+  }
+  
 }
-
+.login-text {
+  font-family: $font-type;
+  padding: 0 12px;
+  height: 35px;
+  line-height: 35px;
+  text-decoration: none;
+  background: url("btn-bg.png") repeat-x;
+  border: none;
+  color: white !important;
+  font-size: 18px;
+  display: inline-block;
+  background-color: transparent;
+  float: right;
+  margin-top: 4px;
+}
 .home-div {
-  width: 415px;
+  width: 402px;
   margin: 25px 0 48px 0px;  
 }
 .login-div {
@@ -157,8 +171,9 @@ a {
   overflow: visible;
   margin: 10px;
   position: relative;
-  background-color: #5EA2B7 !important;
+  background-color: $color !important;
 }
+
 .box::before, .box::after {
   opacity: 0.3 !important;
 }
@@ -170,7 +185,7 @@ a {
   padding-bottom: 6px;
 }
 .form-padding{
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
 }
 
 .box::before, .box::after {
@@ -209,6 +224,7 @@ a {
 }
 .input-text {
   width: 296px;
+  margin-left: 9px;
 }
 
 .logo {
@@ -220,18 +236,18 @@ a {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background: #A2BBC5;
-  background: -moz-linear-gradient(top, #A2BBC5 0%, #A2BBC5 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #A2BBC5), color-stop(2%, #A2BBC5), color-stop(11%, #D8E3E7), color-stop(57%, #A9C2CB), color-stop(60%, #A9C2CB), color-stop(100%, #D7EFF0));
-  background: -webkit-linear-gradient(top, #A2BBC5 0%, #A2BBC5 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
-  background: -o-linear-gradient(top, #A2BBC5 0%, #A2BBC5 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
-  background: -ms-linear-gradient(top, #A2BBC5 0%, #A2BBC5 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
-  background: linear-gradient(to bottom, #A2BBC5 0%, #A2BBC5 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a2bbc5', endColorstr='#d7eff0',GradientType=0 );
+  background: $color-font;
+  background: -moz-linear-gradient(top, $color-font 0%, $color-font 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color-font), color-stop(2%, $color-font), color-stop(11%, #D8E3E7), color-stop(57%, #A9C2CB), color-stop(60%, #A9C2CB), color-stop(100%, #D7EFF0));
+  background: -webkit-linear-gradient(top, $color-font 0%, $color-font 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
+  background: -o-linear-gradient(top, $color-font 0%, $color-font 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
+  background: -ms-linear-gradient(top, $color-font 0%, $color-font 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
+  background: linear-gradient(to bottom, $color-font 0%, $color-font 2%, #D8E3E7 11%, #A9C2CB 57%, #A9C2CB 60%, #D7EFF0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-font', endColorstr='#d7eff0',GradientType=0 );
   -webkit-box-shadow: 0 2px 3px #999;
   -moz-box-shadow: 0 2px 3px #999;
   box-shadow: 0 2px 3px #999;
-  color: #4B5053;
+  color: $common-color;
   font-size: 13px;
   padding: 5px 10px;
   display: inline-block;
@@ -242,5 +258,5 @@ a {
 
 .underline {
   text-decoration: underline;
-  padding-right: 10px;
+  padding-left: 7px;
 }
