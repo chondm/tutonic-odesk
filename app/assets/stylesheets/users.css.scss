@@ -4,6 +4,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   padding-top: 0px;
+  color: #4B5053;
   
 }
 
@@ -21,7 +22,7 @@ body {
   margin: 0 0 10px 62px;
 }
 .login-button {
-  width: 145px;
+  width: 132px;
   margin: 13px 10px 10px auto;
 }
 
@@ -44,12 +45,11 @@ body {
 .or-text {
   font-family: "Rockwell";
   font-size: 14pt;
-  color: #555;
   width: 10px; 
   padding: 0 10px;
 }
 .font-des {
-  font-size: 15px;
+  font-size: 13px;
   margin-bottom: 10px;
   font-family: "Calibri";
 }
@@ -67,23 +67,36 @@ a.login-text {
 .footer-text {
   font-family: "Rockwell";
   font-size: 8pt;
-  color: #555;
+  padding-left: 57px;
 }
-.option-text {
-  font-family: "Rockwell";
-  font-size: 9pt;
-  color: #A2BBC5;
+a.option-text {
   margin-bottom: 15px;
+  font-size: 12px;
+  color: #5EA2B7;
+  font-family: "Calibri";
 }
 .line {
-  border-top: 1px solid #555;
+  border-top: 1px solid #4B5053;
 }
 
 
-.margin-text {
+.des-text {
   margin-bottom: 7px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Calibri";
 }
-
+.btn-link {
+  padding-right: 25px;
+  padding-left: 20px;
+  font-size: 15px;
+  padding-top: 8px;
+  color: #4B5053;
+  font-family: "Rockwell";
+}
+.in-box {
+  padding: 15px 0px;
+}
 
 nav {
   padding-top: 30px;
@@ -95,12 +108,21 @@ nav {
       float: left;
       padding: 0 5px;
   
-      a {
+      a.normal {
         padding: 4px 16px;
         font-size: 15px;
         color: #4B5053;
         font-family: "Rockwell";
         text-decoration: none;
+      }
+      a.active {
+        color: #A2BBC5;
+        font-family: "Rockwell";
+        text-decoration: none;
+        background: url("active-pencil.png") no-repeat top left;
+        padding-left: 27px;
+        padding-top: 9px;
+        font-size: 15px;
       }
     }
   }
@@ -116,33 +138,27 @@ nav {
 }
 
 a {
-  color: #555;
+  color: #4B5053;
   &:visited {
-    color: #555; }
+    color: #4B5053; }
   &:hover {
-    color: #555;
+    color: #4B5053;
     background-color: transparent; } 
 }
 
-a.active {
-  color: #A2BBC5;
-  font-family: "Rockwell";
-  text-decoration: none;
-}
-
 .home-div {
-  width: 362px;
+  width: 415px;
   margin: 25px 0 48px 10px;
 }
 .login-div {
-  width: 362px;
-  margin: 0 0 48px 10px;
+  width: 347px;
+  margin: 0 0 48px 20px;
 }
 .box {
   overflow: visible;
   margin: 10px;
   position: relative;
-  background-color: #5EA2B7 !important;
+  background-color: #72B6CB !important;
 }
 .box::before, .box::after {
   opacity: 0.3 !important;
@@ -193,7 +209,7 @@ a.active {
   background-color: inherit;
 }
 .input-text {
-  width: 305px;
+  width: 296px;
 }
 
 .logo {
@@ -227,4 +243,8 @@ a.active {
 
 .align-content {
   padding-top: 20px;
+}
+.underline {
+  text-decoration: underline;
+  padding-right: 10px;
 }

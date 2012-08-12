@@ -3,7 +3,7 @@
   Sign Up for Tutonic
 
 = image_tag("fb-connect.png")
-.margin-text * We don't post anything without your permission.
+.des-text * We don't post anything without your permission.
 %table.table-span
   %tr 
     %td
@@ -12,11 +12,11 @@
     %td
       %div.line
 .clear
-.option-text Create an account using my email address
+= link_to "Create an account using my email address", "#",:class => "option-text"
 .home-div
   .box
-    %div{:style=>"padding: 15px 0;"}
-      %span{:style=>"padding-right: 20px;"} Already a Tutonic member?
+    %div.in-box
+      %span.btn-link Already a Tutonic member?
       = link_to "Login Now!", "#", :class => "login-text"
 
 
